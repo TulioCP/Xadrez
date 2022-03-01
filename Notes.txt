@@ -60,3 +60,28 @@ Commit 3 - UI, ChessMatch ,ChessPiece and Color
 Commit 4 - Notes
 	
 	Criado o arquivo de notas
+	
+	
+Commit 5 - 
+
+	Alterado classe Board
+		Criado o metodo placePiece
+			Este metodo é responsavel por atribuir a peça na posição
+			
+	Criado classe Rook no pacote Chess
+		Classe definida como subclasse de ChessPiece
+		Criado construtor
+			Este consturtor é usado os atributos do construtor da superclasse
+		Criado metodo toString @Override
+		
+	Criado classe King no pacote chess
+		Classe definida como subclasse de ChessPiece
+		Criado construtor
+			Este consturtor é usado os atributos do construtor da superclasse
+		Criado metodo toString @Override
+		
+	Alterado classe ChessMatch
+		Criado o metodo initialSetup
+			metodo responsavel por iniciar a partida colocando as peças no tabuleiro
+		Alterado o metodo ChessMatch
+			Alteração feita para que ele crie o tabuleiro, e inicie as peças chamando o inicialSetup
