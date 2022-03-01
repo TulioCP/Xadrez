@@ -1,0 +1,62 @@
+Commit 1 - Position
+
+	Criado a classe Position no pacote boardGame
+		Criado atributos int row(linha) column(coluna).
+		Criado construtor e get and set para row e columns.
+		Criado metodo toString.
+		
+		
+Commit 2 - Board and Piece
+
+	Criado a classe Board no pacote boardGame
+		Criado atributos int rows(linhas) columns(colunas).
+		Criado atributo Piece[][] pieces
+			Este atributo é uma matriz do tipo Piece.
+		Criato Consturotor
+			Este construtor pede row column de parametro, e usa o vetor piece que vem nulo colocando 
+			a row e a column na matriz.
+		Criado metodo Get and Set para rows e columns
+
+	Criado a classe Piece no pacote boardGame
+		Criado atributo Protected Position position.
+		Criado atributo Board board.
+		Criado Construtor 
+			Este consturtor pede um Board de parametro, e coloca um position null.
+		Criado um metodo Proteceted getBoard retornando o board.
+		
+
+Commit 3 - UI, ChessMatch ,ChessPiece and Color
+
+	Alterado a classe Board
+		Criado metodo piece
+			Para retornar a peça dada uma linha e uma coluna 
+		Criado metodo piece (Sobrecarga)
+			Para retornar a peça com position.getRow e position.getColumn
+		
+	Criado a classe ENUM color no pacote chess
+		Black e Withe
+		
+	Criado a classe ChessPiece no pacote chess
+		Classe definida como subclasse de Piece
+		Criado atributo Color color
+		Criado construtor
+			Este construtor pede um Board e um Color, o Board repassa a chamada para o construtor de Piece
+		Criado Get de color
+		
+	Criado a classe ChessMatch no pacote chess
+		Criado atributo Board board
+		Criado construtor padrão
+			Este consturtor define o board como (8, 8)
+		Criando metodo getPieces
+			Este metodo retorna uma matriz de peças de xadrez, correspondente a partida
+		
+	Criado a classe UI no pacote application
+		Criado o metodo statico printBoard
+			Este metodo imprime o tabuleiro
+		Criado o metodo static printPiece
+			Este metodo imprime na tela as peças
+	
+	
+Commit 4 - Notes
+	
+	Criado o arquivo de notas
