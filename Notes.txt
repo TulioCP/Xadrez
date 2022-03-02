@@ -124,8 +124,37 @@ Commit 7 - Board Exception
 			Adicionado uma programação defensiva
 				Notificar erro caso escolha uma posição que já existe uma peça
 		
-		
-		
+Commit 8 - 
+
+	Criado a classe ChessExcepiton no pacote chess
+		Classe definida como subclasse de RuntimeException(Tratamento de exceções)
+		Criado Construtor
+			Consturotr devolve msg que é recebida para a superclasse
+	
+	Criado a classe ChessPosition no pacote chess
+		Criado atributo char column
+		Criado atributo int row
+		Criado construtor
+			Adicionado uma programação defensiva
+				Notificar erro caso seja digitado valor invalido no tabuleiro
+		Criado getColumn
+		Criado getRow
+		Criado metodo toPosition
+			Metodo retorna uma nova posição para a peça 
+			transformando da posição da matriz, para posição do tabuleiro
+		Criado metodo fromPosition
+			Metodo retornara uma nova ChessPosition
+			transformando da posição pega no toPosition e colocando no ChessPosition
+		Criado o toString
+			Retorna concatenado a coluna e a linha
+			
+	Alterado a classe ChessMatch
+		Criado metodo placeNewPiece(column,row,piece)
+			Metodo responsavel por colocar a peça com base na posição do tabuleiro
+			Metodo coloca uma peça, passando a peça, criando uma nova ChessPosition passando a coluna
+			e a linah que ele recebe, e usando o metodo toPosition para transformar em posição do tabuleiro
+		Alterado metodo initialSetup
+			Metodo agora inicia com posição do tabuleiro
 		
 		
 		
