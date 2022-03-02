@@ -62,7 +62,7 @@ Commit 4 - Notes
 	Criado o arquivo de notas
 	
 	
-Commit 5 - 
+Commit 5 - Rook and King
 
 	Alterado classe Board
 		Criado o metodo placePiece
@@ -85,3 +85,47 @@ Commit 5 -
 			metodo responsavel por iniciar a partida colocando as peças no tabuleiro
 		Alterado o metodo ChessMatch
 			Alteração feita para que ele crie o tabuleiro, e inicie as peças chamando o inicialSetup
+			
+			
+Commit 6 - Update Notes
+
+	Alterado notas
+	
+	
+Commit 7 - Board Exception
+
+	Criado a classe BoardException no pacote boardgame
+		Classe definida como subclasse de RuntimeException(Tratamento de exeções)
+		Criado construtor
+			Construtor devolve msg que é recebida para superclasse
+			
+	Alterado classe Board
+		Cirado metodo positionExists
+			Metodo testa se a linha e coluna é maior que zero e menor que o tabuleiro
+		Criando metodo positionExists (Sobrecarga)
+			Metodo chama positionExists e passa a linha e a coluna da posição
+		Criado metodo thereIsAPiece
+			Metodo recebe uma posição, manda a posição para o metodo board.piece e verifica se a peça na
+			posição é nula ou não, caso seja tem uma peça na posição
+			Adicionado uma programação defensiva
+				Notificar erro caso não exista a posição no tabuleiro
+		Alterado construtor
+			Adicionado uma programação defensiva
+				Notificar erro caso seja digitado linha ou coluna menor que 1
+		Removido setRows
+		Removido setColumn
+		Alterado Piece(row,columns)
+			Adicionado uma programação defensiva
+				Notificar erro caso não exista a posição no tabuleiro
+		Alterado Piece(position)
+			Adicionado uma programação defensiva
+				Notificar erro caso não exista a posição no tabuleiro
+		Alterado placePiece(Piece, Position)
+			Adicionado uma programação defensiva
+				Notificar erro caso escolha uma posição que já existe uma peça
+		
+		
+		
+		
+		
+		
