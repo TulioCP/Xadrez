@@ -192,7 +192,7 @@ Commit 10 - Move Pieces
 		e criar uma peça, apaga a anterior e joga para o metodo performChessMove
 	
 	
-Coomit 11 - ClearScreen and Exceptions
+Commit 11 - ClearScreen and Exceptions
 
 	Alterado classe UI
 		Criado metodo clearScrren
@@ -201,3 +201,30 @@ Coomit 11 - ClearScreen and Exceptions
 	Alterado a classe Program
 		Agora o programa chama o metodo de clearScren
 		Agora o programa faz o tratamento de exceções
+		
+		
+Commit 12 - Possibel moves of a piece
+
+
+	Alterado a classe Piece
+		Criado o metodo abstrato possibleMoves
+		Classe agora é abstrata
+		Criado metodo possibleMove(Position position)
+			Esse metodo retorna uma matriz booleana do chamada pelo metodo possibleMoves
+		Criado o metodo isThereAnyPossibleMove
+			Esse metodo cria uma matriz booleana, e joga nela o metodo possibleMoves, depois ele testa
+			quadro a quadro da matriz se é possivel mover ou não
+	
+	Alterado classe ChessPiece
+		Classe agora é abstrata
+		
+	Alterado classe King
+		Criado metodo @Override possibleMoves()
+			Metodo cria uma matriz de booleana do tamanho do tabuleiro, por padrão todas casas falsas
+			
+	Alterado classe Rook
+		Criado metodo @Override possibleMoves()
+			Metodo cria uma matriz de booleana do tamanho do tabuleiro, por padrão todas casas falsas
+			
+	Alterado classe ChessMatch
+		Adicionado tratação de erro para quando não tiver movimentos possiveis para a peça
