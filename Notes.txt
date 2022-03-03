@@ -124,7 +124,7 @@ Commit 7 - Board Exception
 			Adicionado uma programação defensiva
 				Notificar erro caso escolha uma posição que já existe uma peça
 		
-Commit 8 - 
+Commit 8 - ChessException and ChessPosition
 
 	Criado a classe ChessExcepiton no pacote chess
 		Classe definida como subclasse de RuntimeException(Tratamento de exceções)
@@ -156,5 +156,5 @@ Commit 8 -
 		Alterado metodo initialSetup
 			Metodo agora inicia com posição do tabuleiro
 		
-		
+Commit 9 -		
 		
