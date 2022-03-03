@@ -228,3 +228,37 @@ Commit 12 - Possibel moves of a piece
 			
 	Alterado classe ChessMatch
 		Adicionado tratação de erro para quando não tiver movimentos possiveis para a peça
+		
+
+Commit 13 - Possible moves of a Rook
+
+	Alterado classe ChessPiece
+		Criado o metodo isThereOponentPiece(position)
+			Metodo cria uma peça e coloca dentro a peça da posição, depois ele retorna um teste se o valor
+			da peça é diferente de null, e se a cor é diferente da peça atual
+		
+	Alterado classe Position
+		Criado a classe setValues
+			Classe recebe linha e coluna, e atualiza a linha e a coluna da peça.
+
+	Alterado clase Rook
+		Alterado o metodo possibleMoves
+			Metodo agora cria uma posição P com a posição 0,0
+			Metodo testa linhas acima usando o metodo position.setValues enquanto a posição exisistr 
+			e não tiver peça
+			
+	Alterado classe ChessMatch
+		Criado o metodo validadeTargetPosition(Position, Positio)
+			Tratação de exceção caso a peça não possa ir para para posição
+		Alteração no metodo performChessMove
+			Agora ele testa a posição final
+			
+
+			
+			
+	
+		
+
+
+
+
