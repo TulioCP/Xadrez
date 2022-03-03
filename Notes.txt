@@ -156,5 +156,38 @@ Commit 8 - ChessException and ChessPosition
 		Alterado metodo initialSetup
 			Metodo agora inicia com posição do tabuleiro
 		
-Commit 9 -		
+Commit 9 - Improvemnts in board print
+
+	Alterado classe UI
+		Adicionado cores ao fundo e as peças
+		
+		
+Commit 10 - 
+		
+		Alterado Classe Board
+			Criado metodo removePiece(Position)
+				Metodo testa se a posição recebida tem uma peça, caso não tenha ele retorna null
+				caso tenha ele cria uma variavel peça com a posição recebida, define a peça como null e retorna
+			
+		Alteradp Classe UI	
+			Criado Metodo readChessPosition(Scaner)
+				Metodo lê a posição e separa o primeiro caracter como coluna e o segundo caraceer como linha
+				e retorna uam nova posição com as linhas decididas
+				Adicionado programção defensiva para retornar caso digite valor invalido
+			
+		Alterado Classe ChessMatch
+			Criado Metodo performChessMove(ChessPosition, ChessPositon)
+				Metodo recebe a posição da peça atual, e para onde ela vai, depois ele valida a posição que ela está
+				faz o movimento e retorna a peça na nova posição.
+			Criado metodo validateSourcePosition
+				Metodo testa se tem uma peça na posição.
+			Criado metodo makeMove(position, position)
+			
+		Alterado Classe ChessExcepiton
+			Classe agora não é mais uma subclasse de RuntimeException, agora é uma subclasse de BoardException
+			
+		Alterao classe Program
+			Definido criação de ChessMatch
+			Então definido um loop infinito, ele vai imprimir as peças, depois vai ler a origem e a final
+			e criar uma peça, apaga a anterior e joga para o metodo performChessMove
 		
