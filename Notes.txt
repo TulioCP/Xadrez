@@ -273,9 +273,13 @@ Commit 14 - Printing possible moves
 			Metodo agora recebe boolean background
 			Metodo testa se background é verdadeiro, se for ele muda a cor do fundo 
 		
+Commit 15 - Possible moves of a King
 		
-	
-
+	Alterado Classe King
+		Criado metodo canMove
+			Metodo testa se a posição enviada, é null ou de uma peça de cor diferente
+		Alterado Metodo possibleMoves
+			Adicionado movimentos do rei
 	
 			
 			
