@@ -282,10 +282,46 @@ Commit 15 - Possible moves of a King
 			Adicionado movimentos do rei
 	
 			
+Commit 16 - Switching Player
+
+	Alterado Class ChessMatch
+		 Criado variavel int turn
+		 Criado variavel Color currentPlayer
+		 Criado get das novas variaveis
+		 Alterado construtor
+			construtor agora define turn como 1 e currentPlayer como White
+		Criado metodo nextTurn
+			Metodo aumenta o valor do turno em 1, e troca a cor para contraria da atual
+		Alterado metodo performChessMove
+			Agora o metodo chama um nextTurn antes de retornar
+		Alterado metodo ValidateSourcePosition
+			Agora o metodo dá um aviso caso selecione a peça diferente da sua
 			
-	
+	Alterado Class UI
+		Criado variavel printMatch
+			Imprime o tabuleiro, depois avisa o turno, e avisa quem deve jogar
+
+
+Commit 17 - Captured Pieces
+
+	Alterado Class UI
+		Criado Metodo printCaputuredPieces(list)
+			Cria duas listas para peças brancas e pretas capturadas
+			Imprime as peças caputradas
+		Alterado metodo printMatch
+			Imprime a lista	
 		
-
-
-
-
+	Alterado Class Program
+		Criado uma lista como atributo de capturados
+		Adicionado no programa para passar os capturados para o printMatch
+		Adiciona programação para peça capturada na entrar na lista
+	
+	Alterado Class ChessMatch
+		Criado duas listas para peças
+		Alterado metodo placeNewPiece
+			Agora o metodo adiciona uma peça na lista de peças no tabuleiro, quando ele define as peças
+		Alterado metodo makeMove
+			Agora o metodo tira a peça da lista de peças no tabuleiro e coloca na peças capturadas quando for o caso
+			
+			
+		
