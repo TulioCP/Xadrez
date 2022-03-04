@@ -254,6 +254,29 @@ Commit 13 - Possible moves of a Rook
 			Agora ele testa a posição final
 			
 
+Commit 14 - Printing possible moves
+
+	Alterado Classe ChessMatch
+		Criado metodo possibleMoves(ChessPosition)
+			Metodo converte posição de xadrez pra posição matriz
+			Valida a posição
+			retorna os movimentos possiveis da peça na posição
+			
+	Alterando Class Program
+		Agora o programa depois de ler a peça que vai ser movida, vai limpar a tela e imprimir um novo tabuleiro
+		onde mostra as possiveis jogadas
+		
+	Alterando Classe UI
+		Criado metodo printBoard(ChessPiece[][], boolean[][])Sobrecarga
+			Metodo imprime o tabuleiro mostrando movimentos possiveis no fundo
+		Alterado metodo printPiece
+			Metodo agora recebe boolean background
+			Metodo testa se background é verdadeiro, se for ele muda a cor do fundo 
+		
+		
+	
+
+	
 			
 			
 	
