@@ -324,4 +324,31 @@ Commit 17 - Captured Pieces
 			Agora o metodo tira a peça da lista de peças no tabuleiro e coloca na peças capturadas quando for o caso
 			
 			
+Commit 18 - Check logic
+	
+	Alterado Class ChessPosition
+		Criado metodo getChessPosition
+			metodo retorna um ChessPosition da posição da peça
+			
+	Alterado Class ChessMatch
+		Criado metodo undoMove
+			Metodo desfaz movimento.
+		Criado atributo check
+		Criado metodo opponent
+			Metodo retorna cor inversa, se a peça é branca retorna preta, se é preta retorna branca.
+		Criado metodo king
+			Metodo cria uma lista com as peças da da cor certa em uma nova lista
+			Em cada item da lista, verá se é um rei, se for retorna a peça com DownCasting para ChessPiece
+			Se não achar dá um erro
+		Criado metodo testCheck
+			Metodo cria uma Position pegando a posição do rei da cor definida
+			Cria uma lista com todas as peças inimigas
+			Testa peça a peça fazendo uma matriz com os possiveis movimentos de todas as peças
+			Testa se dentro do possiveis movimentos, um deles é igual a posição do rei retorna verdadeira
+			Se não achar retorna falso
+		Atualizado metodo PerformChessMove
+			Agora o metodo testa se o jogador atual está em check. Se estiver, trata o erro e volta o movimento
+			Testa se o oponente está em check
+			
 		
+	
