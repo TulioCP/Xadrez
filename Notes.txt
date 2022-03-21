@@ -390,10 +390,23 @@ Commit 21 - Pawn
 	Criado Class Pawn 
 		Classe definida como subclasse de ChessPiece
 		Criado construtor
-		Criado Metodo possible Moves
+		Criado Metodo possibleMoves
 			Metodo faz com que o peão mova sempre para frente, na primeira jogada possa mover 2, e possa comer na diagonal
 			
 	Alterado Class ChessMatch
 		Alterado Metodo initialSetup
 			Agora o jogo começa com as peças nas posições certas
+			
+Commit 22 - Bishop
+
+	CCriado Class Bishop 
+		Classe definida como subclasse de ChessPiece
+		Criado construtor
+		Criado Metodo possibleMoves
+			Metodo faz com que o bispo possa andar e comer peças nas diagonais
+			
+	Alterado Class ChessMatch
+		Alterado Metodo initialSetup
+			Agora o jogo começa com as peças nas posições certas
+		
 		
