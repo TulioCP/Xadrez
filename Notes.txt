@@ -350,7 +350,7 @@ Commit 18 - Check logic
 			Agora o metodo testa se o jogador atual está em check. Se estiver, trata o erro e volta o movimento
 			Testa se o oponente está em check
 			
-Commit 18 - 
+Commit 19 - CheckMate Logic
 
 	Alterado Class ChessMatch
 		Alterado metodo initialSetup
@@ -369,4 +369,18 @@ Commit 18 -
 		
 	Alterado Class UI
 		Agora o UI testa o checkmate e passa o resultado caso seja checkmate
-		
+
+Commit 20 - Piece Move Count
+
+	Alterado Class ChessPiece
+		Criado atributo moveCount
+		Criado Metodo getMoveCount
+		Criado Metodo increaseMoveCount
+		Criado Metodo deacreseMoveCount
+	
+	Alterado Class ChessMatch
+		Alterado Metodo makeMove
+			Agora o metodo aumenta a quantidade de movimento
+		Alterado Metodo undoMoveCount
+			Agora o metodo diminui a quantidade de movimento
+			
