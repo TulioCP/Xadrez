@@ -472,5 +472,17 @@ Commit 26 - En passant
 		Alterado Metodo undoMove
 			Agora o metodo desfaz a jogada enPassant
 			
-							
+Commit 27 - Promoted
 
+	Alterado Class ChessMatch
+		Criado atributo promoted
+	Criato GetPromoted
+	Alterado Metodo Perform ChessMove
+		Metodo testa se o peão chegou a ultima cassa
+	Criado Metodo replacePromotedPiece
+		Metodo troca o peão que chegou no final por uma nova peça
+	Criado Metodo newPiece
+		Metodo testa qual nova peça será colocada
+		
+	Alterado Class Program
+		Adicionado um teste para solicitar qual peça quer trocar no promotion
