@@ -384,3 +384,16 @@ Commit 20 - Piece Move Count
 		Alterado Metodo undoMoveCount
 			Agora o metodo diminui a quantidade de movimento
 			
+			
+Commit 21 - Pawn
+
+	Criado Class Pawn 
+		Classe definida como subclasse de ChessPiece
+		Criado construtor
+		Criado Metodo possible Moves
+			Metodo faz com que o peão mova sempre para frente, na primeira jogada possa mover 2, e possa comer na diagonal
+			
+	Alterado Class ChessMatch
+		Alterado Metodo initialSetup
+			Agora o jogo começa com as peças nas posições certas
+		
