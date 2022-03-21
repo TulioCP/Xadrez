@@ -420,4 +420,15 @@ Commit 23 - Knight
 	Alterado Class ChessMatch
 		Alterado Metodo initialSetup
 			Agora o jogo começa com as peças nas posições certas
-	
+			
+Commit 24 - Queen
+
+	Criado Class Queen 
+		Classe definida como subclasse de ChessPiece
+		Criado construtor
+		Criado Metodo possibleMoves
+			Metodo faz com que dama possa mover e comer para cima baixo lados e diagonais.
+			
+	Alterado Class ChessMatch
+		Alterado Metodo initialSetup
+			Agora o jogo começa com as peças nas posições certas
