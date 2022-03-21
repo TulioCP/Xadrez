@@ -432,3 +432,26 @@ Commit 24 - Queen
 	Alterado Class ChessMatch
 		Alterado Metodo initialSetup
 			Agora o jogo começa com as peças nas posições certas
+			
+Commit 25 - Castling
+	
+	Alterado Class King
+		Criado atributo chessMatch
+		Alterado Constrotor
+			Agora o construtor recebeu um ChessMatch e define o ChessMatch do rei.
+		Criado metodoo testRookCastling
+			Metotodo testa se a peça não é nula, é uma torre, é da mesma cor e não moveu ainda
+		Alterado Metodo possibleMoves
+			Metodo agora também tem a logica do Castling
+		
+	Alterado Class ChessMatch
+		Alterado metodo initalSetup
+			Agora o metodo manda a posição para o construtor do King
+		Alterado metodo makeMove
+			Agora o metodo faz o movimento da torre do Castling
+		Alterado metodo undoMove
+			Agora o metodo desfaz o movimento da torre no Castling
+			
+		
+			
+
