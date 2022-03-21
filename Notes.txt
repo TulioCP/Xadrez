@@ -350,5 +350,23 @@ Commit 18 - Check logic
 			Agora o metodo testa se o jogador atual está em check. Se estiver, trata o erro e volta o movimento
 			Testa se o oponente está em check
 			
-		
+Commit 18 - 
+
+	Alterado Class ChessMatch
+		Alterado metodo initialSetup
+			Agora posições das peças inicias estão proximas de um checkmate
+		Criado atributo checkMate
+		Criado metodo getCheckMate
+		Criado metodo testCheckMate
+			Metodo cria uma lista com todas as peças da cor do jogador. faz uma matriz com todas as possiveis jogadas
+			de todas as peças do jogador, e testa cada movimento possivel, se algum movimento tira do check, ele não está em checkmate
+		Alterado metodo performChessMove
+			Agora o metodo testa se o movimento que eu fiz deixou o inimigo em CheckMate
 	
+	Alterado Class Program
+		Agora roda o programa enquanto a partida não estiver em checkmate
+		Apos o while, ele limpa a tela e imprime a partida novamente
+		
+	Alterado Class UI
+		Agora o UI testa o checkmate e passa o resultado caso seja checkmate
+		
