@@ -452,6 +452,25 @@ Commit 25 - Castling
 		Alterado metodo undoMove
 			Agora o metodo desfaz o movimento da torre no Castling
 			
-		
+Commit 26 - En passant
+
+	Alterado Class ChessMatch		
+		Criado atributo enPassantVulnerable
+		Criado Get do enPassantVulnerable
+		Alterado metodod performChessMove
+			Agora o metodo preenche a variavel enPassantVunerable quando um peão anda duas casas
+		Atualizado metododo initialSteup
+			Agora o metodo passa o ChessMatch para o construtor do Pawn
+
+	
+	Alterado Class Pawn
+		Criado atributo ChessMatch
+		Alterado Construtor
+			Agora o construtor pede um ChessMove
+		Alterado Metodo possibleMoves
+			Agora o metodo também conta com a possibilidade do enPassant
+		Alterado Metodo undoMove
+			Agora o metodo desfaz a jogada enPassant
 			
+							
 
