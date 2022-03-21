@@ -486,3 +486,9 @@ Commit 27 - Promoted
 		
 	Alterado Class Program
 		Adicionado um teste para solicitar qual peça quer trocar no promotion
+		
+Commit 28 - BugFix
+
+	Alterado Class Program
+		O programa quebrava quando digitava uma peça para promoção inexistente. Arrumado, agora ele insiste até a pessoa digitar certo
+	
