@@ -399,7 +399,7 @@ Commit 21 - Pawn
 			
 Commit 22 - Bishop
 
-	CCriado Class Bishop 
+	Criado Class Bishop 
 		Classe definida como subclasse de ChessPiece
 		Criado construtor
 		Criado Metodo possibleMoves
@@ -409,4 +409,15 @@ Commit 22 - Bishop
 		Alterado Metodo initialSetup
 			Agora o jogo começa com as peças nas posições certas
 		
-		
+Commit 23 - Knight
+
+	Criado Class Knight 
+		Classe definida como subclasse de ChessPiece
+		Criado construtor
+		Criado Metodo possibleMoves
+			Metodo faz com que o cavalo possa andar para as 8 possições possiveis em L.
+			
+	Alterado Class ChessMatch
+		Alterado Metodo initialSetup
+			Agora o jogo começa com as peças nas posições certas
+	
